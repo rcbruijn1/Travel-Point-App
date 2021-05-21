@@ -30,7 +30,6 @@ export class LoginComponent implements OnInit {
         console.log(data);
         console.log('logged in')
         this.authService.storeUserData(this.data.token, this.data.user);
-        // this.flashMessage.show("Logged in successfuly!", {cssClass: 'alert-success', timeout: 3000});
         this.router.navigate(['/']);
       }else{
         window.alert('Please fill in the correct username/password');
